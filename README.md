@@ -17,9 +17,11 @@ python webscraper.py
 Between 1885 to 2002, there are around 16,000 articles, amounting to a little over 1 GB of .txt files. Towards that end, the scraping takes awhile, and you likely will be "timed out" by the dp archives' API. When the script is running, you will see a count being printed to your console. If you get timed out, simply add the last count that you got to the end of the script.
 
 ```
-python webscraper.py
-7433
+python webscraper.py 7433
 ```
+
+The .txt files will be downloaded directly to the directory you are in, and will be of the format tdpYEARMONTHDAY-01.txt, for example: tdp19341128-01.txt is the issue for November 28th, 1934.
+
 
 ### To Do list
 - Be able to add flags to only scrape articles from certain dates
@@ -27,6 +29,6 @@ python webscraper.py
 
 ### About the project
 
-the dp archives web scraper was created for the final project for the class, Introduction to Digital Humanities taught by [Scott Enderle](https://github.com/senderle) in Spring 2019. The [topic modeling tool](github.com/senderle/topic-modeling-tool) was used on the files scraped by this project. The early code for this was written in a jupyter notebook. After completion of the project, I decided to make it a python executable script for those who want to scrape the daily pennsylvanian archives for themselves.
+the dp archives web scraper was created for the final project for the class, Introduction to Digital Humanities taught by [Scott Enderle](https://github.com/senderle) in Spring 2019. The [topic modeling tool](github.com/senderle/topic-modeling-tool) was used on all of the issues scraped by this project. The early code for this was written in a jupyter notebook. After completion of the project, I decided to make it a python executable script for those who want to scrape the daily pennsylvanian archives for themselves.
 
 Special thanks go to [Matthew Pilecki](https://www.library.upenn.edu/people/staff/matthew-pilecki) and [Jessica Dummer](https://www.library.upenn.edu/people/staff/jessica-dummer) from [Penn Libraries](https://www.library.upenn.edu/), [Stefan Boddie](https://veridiansoftware.com/about/) from [Veridian Software](https://veridiansoftware.com/) for helping me with the API, and [Scott Enderle](https://github.com/senderle) for oversight for the project.
