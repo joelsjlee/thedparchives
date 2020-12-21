@@ -44,7 +44,7 @@ def run(documentIDList, start = 1):
     for i, doc_ID in enumerate(documentIDList[start:], start=start):
         print(i, flush=True)
         start += 1
-        getPageText(doc_ID, 'C:/Users/Joel/thedparchives/dpIssueTexts/{}.TXT')
+        getPageText(doc_ID, '{}.txt')
 
 
 if __name__ == '__main__':
